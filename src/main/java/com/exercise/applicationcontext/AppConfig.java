@@ -9,7 +9,9 @@ public class AppConfig {
 
     @Bean
     public Car car() {
-        return new Car();
+        Car car = new Car();
+        car.setMaxSpeed(201);
+        return car;
     }
 
     @Bean
