@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Bean
+    //基于java类配置
+    @Bean(initMethod = "myInit",destroyMethod = "myDestroy")
     public Car car() {
         Car car = new Car();
         car.setMaxSpeed(201);

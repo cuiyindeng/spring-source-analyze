@@ -37,12 +37,12 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
-    @PostConstruct
+    //@PostConstruct //基于注解配置
     public void myInit() {
         System.out.println("调用init-method()方法");
     }
 
-    @PreDestroy
+    //@PreDestroy //基于注解配置
     public void myDestroy() {
         System.out.println("调用destroy-method()方法");
     }
