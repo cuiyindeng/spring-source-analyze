@@ -46,4 +46,13 @@ public class Car {
     public void myDestroy() {
         System.out.println("调用destroy-method()方法");
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                '}';
+    }
 }
