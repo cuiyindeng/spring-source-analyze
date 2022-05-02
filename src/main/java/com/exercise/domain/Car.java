@@ -42,7 +42,7 @@ public class Car {
         System.out.println("调用init-method()方法");
     }
 
-    //@PreDestroy //基于注解配置
+    @PreDestroy //基于注解配置
     public void myDestroy() {
         System.out.println("调用destroy-method()方法");
     }

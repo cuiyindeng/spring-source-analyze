@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class CarService1 {
     @Autowired
-    private Car car;
+    private CarService carService;
 
-    public Car getCar() {
-        return car;
+    public CarService getCarService() {
+        return carService;
     }
 }

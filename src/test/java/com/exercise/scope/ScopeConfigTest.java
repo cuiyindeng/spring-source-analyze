@@ -16,5 +16,7 @@ public class ScopeConfigTest {
         System.out.println(carService == carService1);
         //Car为@Scope("singleton")时为true，@Scope("prototype")时为false
         System.out.println(carService.getCar() == carService1.getCar());
+        configApplicationContext.destroy();
+        configApplicationContext.close();
     }
 }

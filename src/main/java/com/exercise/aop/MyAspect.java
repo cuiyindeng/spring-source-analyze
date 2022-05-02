@@ -20,7 +20,7 @@ public class MyAspect {
      */
     @Pointcut("execution(* com.exercise.aop.impl.CarServiceImpl.printCar(..))")
     public void pointCut() {
-        logger.info("before........");
+        logger.info("pointCut........");
     }
 
     /**
